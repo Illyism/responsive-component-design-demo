@@ -1,0 +1,28 @@
+.table {
+  display: table;
+  .thead {
+    display: table-header-group;
+    vertical-align: middle;
+  }
+  .tbody {
+    display: table-row-group;
+    vertical-align: middle;
+  }
+  .tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+  }
+  .tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+  .th {
+    font-weight: bold;
+  }
+  .td,
+  .th {
+    display: table-cell;
+    vertical-align: inherit;
+  }
+}

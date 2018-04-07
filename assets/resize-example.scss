@@ -1,0 +1,32 @@
+.contain {
+  transition: all .5s ease-out;
+}
+
+img {
+  padding: 20px;
+  width: 100%;
+}
+
+.SM {
+  color: red;
+
+  img {
+    width: 300px;
+  }
+}
+
+.MD {
+  color: orange;
+
+  img {
+    width: 400px;
+  }
+}
+
+.LG {
+  color: green;
+
+  img {
+    width: 500px;
+  }
+}

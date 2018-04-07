@@ -1,0 +1,122 @@
+.header {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  border-right: 1px solid #272858;
+  user-select: none;
+}
+
+.header__item {
+  color: #D4D4E0;
+  display: block;
+  line-height: 50px;
+  min-width: 25px;
+  text-align: center;
+  transition: .2s ease-out;
+  flex-shrink: 1;
+  padding: 0 10px;
+
+  &:first-child {
+    border-top-left-radius: 4px;
+  }
+}
+
+.header__item--clickable {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: rgba(255, 255, 255, .1);
+    color: white;
+  }
+}
+
+.header__item--month {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 12px;
+}
+
+/* calendar */
+.calendar {
+  background: #212150;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid #272658;
+  text-align: left;
+  margin-bottom: 30px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .4);
+}
+
+.calendar__row {
+  display: flex;
+  text-decoration: none;
+  color: #D4D4E0;
+  border-bottom: 1px solid #272858;
+  position: relative;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.calendar__row--header {
+  background: #1c1c48;
+  background: linear-gradient(to bottom, #212150, #1c1c48);
+}
+
+.calendar__header {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20px 0 0;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #1c1c48;
+  background: linear-gradient(to right, #212150, #1c1c48);
+  border-right: 1px solid #272858;
+}
+
+.days {
+  flex: 1;
+  display: flex;
+  vertical-align: middle;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.day {
+  flex: 1;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day__slot {
+  display: inline-block;
+  height: 5px;
+  line-height: 5px;
+  width: 100%;
+  transition: background .2s ease-in-out;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+}
+
+.day:first-child .day__slot {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.day:last-child .day__slot {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.days--header {
+  color: #aaabde;
+}

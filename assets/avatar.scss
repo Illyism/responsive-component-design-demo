@@ -1,0 +1,15 @@
+
+.avatar {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+}
+
+.avatar__content {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, .5);
+  box-shadow: 0 0 40px rgba(#8266f2, .5);
+}
