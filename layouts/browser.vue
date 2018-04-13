@@ -60,7 +60,7 @@ export default {
   computed: {
     frameURL () {
       const [ category, name ] = this.$route.path.split('/').filter(x => x)
-      return `/${category}/${name}-frame/`
+      return `/${category}/${name}-frame`
     },
     styles () {
       if (this.wrapWidth < 600) {
