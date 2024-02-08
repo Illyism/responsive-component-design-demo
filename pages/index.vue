@@ -1,5 +1,6 @@
 <template>
   <section>
+    <a href="https://il.ly/">Made by Ilias Ism</a>
     <div class="links">
       <div class="header">Basic components</div>
       <nuxt-link class="link" to="/basic/list">list</nuxt-link>
