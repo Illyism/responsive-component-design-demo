@@ -18,7 +18,7 @@
     "date-fns": "^1.29.0",
     "faker": "^4.1.0",
     "modern-normalize": "^0.3.0",
-    "nuxt": "^1.0.0",
+    "nuxt": "^2.15.8",
     "vue-no-ssr": "^0.2.2"
   },
   "devDependencies": {
